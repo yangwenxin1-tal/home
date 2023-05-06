@@ -8,24 +8,24 @@ echo "########### 开始pull代码"
 #git pull
 echo "########### 前往/root/home/dist项目自行pull,这里仅部署用"
 echo "########### 结束pull代码"
-sleep 5
+sleep 2
 
 #备份旧的dist目录
 if [ -d '/usr/share/nginx/dist.bak' ]; then
     echo "########### 删除旧的dist.bak目录"
-    sleep 5
+    sleep 2
     rm -rf /usr/share/nginx/dist.bak
 fi
 
 if [ -d '/usr/share/nginx/dist' ]; then
     echo "########### 备份旧的dist目录"
-    sleep 5
+    sleep 2
     mv /usr/share/nginx/dist /usr/share/nginx/dist.bak
 fi
 
 #将新的dist目录复制到nginx目录下
 echo "########### 复制dist目录到nginx目录下"
-sleep 5
+sleep 2
 cp -rf /root/home/dist /usr/share/nginx/dist || { echo "########### 复制dist目录失败"; exit 1; }
 
 end_time=$(date "+%Y-%m-%d %H:%M:%S")
