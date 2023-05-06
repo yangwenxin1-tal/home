@@ -5,8 +5,9 @@ start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "########### 开始时间：$start_time"
 #拉取最新代码
 echo "########### 开始pull代码"
-#git pull
-echo "########### 前往/root/home/dist项目自行pull,这里仅部署用"
+cd /root/home
+git pull
+#echo "########### 前往/root/home/dist项目自行pull,这里仅部署用"
 echo "########### 结束pull代码"
 sleep 2
 
