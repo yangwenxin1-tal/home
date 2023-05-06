@@ -65,7 +65,7 @@ let linksData = [
   },
   {
     icon: Cloud,
-    name: "autogpt",
+    name: "autoGPT",
     link: "http://yangwenxin.com/autogpt",
   },
   {
