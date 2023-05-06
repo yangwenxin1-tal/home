@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 #拉取最新代码
-echo "\n###########开始pull代码"
+echo "###########开始pull代码"
 git pull
 echo "########### 结束pull代码"
 sleep 5
