@@ -46,12 +46,7 @@ let linksData = [
   {
     icon: Blog,
     name: "博客",
-    link: "https://blog.imsyy.top/",
-  },
-  {
-    icon: Cloud,
-    name: "网盘",
-    link: "https://pan.imsyy.top/",
+    link: "https://wenxinyang.github.io",
   },
   {
     icon: CompactDisc,
@@ -59,14 +54,19 @@ let linksData = [
     link: "https://music.imsyy.top/",
   },
   {
-    icon: Compass,
-    name: "起始页",
-    link: "https://nav.imsyy.top/",
-  },
-  {
     icon: Book,
     name: "网址集",
     link: "https://web.imsyy.top/",
+  },
+  {
+    icon: Compass,
+    name: "chatGPT",
+    link: "http://yangwenxin.com/chatgpt",
+  },
+  {
+    icon: Cloud,
+    name: "autogpt",
+    link: "http://yangwenxin.com/autogpt",
   },
   {
     icon: Fire,
