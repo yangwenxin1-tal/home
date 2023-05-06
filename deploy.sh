@@ -5,7 +5,8 @@ start_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "########### 开始时间：$start_time"
 #拉取最新代码
 echo "###########开始pull代码"
-git pull
+#git pull
+echo "########### 前往/root/home/dist项目自行pull,这里仅部署用"
 echo "########### 结束pull代码"
 sleep 5
 
@@ -25,7 +26,7 @@ fi
 #将新的dist目录复制到nginx目录下
 echo "########### 复制dist目录到nginx目录下"
 sleep 5
-cp -rf dist /usr/share/nginx/dist || { echo "########### 复制dist目录失败"; exit 1; }
+cp -rf /root/home/dist /usr/share/nginx/dist || { echo "########### 复制dist目录失败"; exit 1; }
 
 end_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "########### 结束时间：$end_time"
